@@ -108,8 +108,7 @@ Kodu kopyala
   "protection": "PAGE_EXECUTE_READWRITE"
 }
 ETW Eventleri
-json
-Kodu kopyala
+
 {
   "event": "ImageLoad",
   "process": "explorer.exe",
@@ -117,18 +116,15 @@ Kodu kopyala
 }
 ⚙️ Kurulum
 1. Repo’yu klonla
-bash
-Kodu kopyala
+
 git clone https://github.com/omergediks/DLL-Guvenlik-Analizi.git
 2. C# projelerini build et
 Visual Studio veya dotnet CLI kullanılabilir.
 
-bash
-Kodu kopyala
+
 dotnet build
 3. Python bağımlılıkları
-bash
-Kodu kopyala
+
 pip install etw
 4. PowerShell scripti
 powershell
@@ -136,8 +132,7 @@ Kodu kopyala
 powershell -ExecutionPolicy Bypass -File .\PowerShell\kernel_logger.ps1
 📘 Kullanım
 DLL ve Bellek İzleme
-bash
-Kodu kopyala
+
 DllLoadListener.exe
 MemoryMonitor.exe
 ETW Listener
@@ -145,8 +140,7 @@ bash
 Kodu kopyala
 python etw_listener.py
 Kernel Logger
-powershell
-Kodu kopyala
+
 .\kernel_logger.ps1
 Tüm loglar logs/ dizinine düşer.
 
@@ -176,5 +170,3 @@ Bu proje MIT lisansı ile yayınlanmıştır.
 ⭐ Destek Olmak İçin
 Projeyi faydalı bulduysan yıldız verebilirsin!
 
-yaml
-Kodu kopyala
