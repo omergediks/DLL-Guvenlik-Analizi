@@ -99,8 +99,8 @@ Sistem aşağıdaki türde loglar üretir:
   "base": "0x7FFBF12A0000"
 }
 Bellek Analizi
-json
-Kodu kopyala
+
+
 {
   "pid": 928,
   "region_start": "0x0000012340000000",
@@ -122,13 +122,12 @@ git clone https://github.com/omergediks/DLL-Guvenlik-Analizi.git
 Visual Studio veya dotnet CLI kullanılabilir.
 
 
-dotnet build
 3. Python bağımlılıkları
 
 pip install etw
 4. PowerShell scripti
-powershell
-Kodu kopyala
+
+
 powershell -ExecutionPolicy Bypass -File .\PowerShell\kernel_logger.ps1
 📘 Kullanım
 DLL ve Bellek İzleme
