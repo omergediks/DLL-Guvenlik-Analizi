@@ -1,0 +1,1 @@
+Katkıda bulunmak için lütfen önce proje sahibiyle iletişime geçin. Değişiklikler PR yoluyla gönderilsin; testler izolasyon ortamında çalıştırılsın.
