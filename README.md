@@ -1,22 +1,16 @@
-# DLL-Guvenlik-Analizi
+# DLL Analysis & Monitoring Project (Academic, Defensive)
 
-**DLL Güvenlik Analizi ve İzleme Kiti** — Akademik ve savunma amaçlı açık kaynak proje.
+This project contains defensive monitoring and analysis tools for DLL load and process memory behavior.
+All code is intended for **research, defensive, and educational** purposes only. **Do not** use the code to perform attacks or abuse systems.
 
-**Önemli Uyarı:** Bu proje **sadece savunma, izleme, ve araştırma** amaçlıdır. İçerdiği kodlar saldırı, istismar veya atlatma teknikleri sağlamaz. Lütfen kodları yalnızca izole, test amaçlı ortamda (ör. VM snapshot alınmış) çalıştırın.
+## Contents
+- Thesis.md / Thesis.pdf : 10-page academic writeup (defensive, non-actionable).
+- CSharp/MemoryMonitor.cs : Safe memory region scanner (uses VirtualQueryEx) for analysis.
+- CSharp/DllLoadListener.cs : Simple ETW-like EventListener snippet for image load events (managed).
+- Python/etw_listener.py : Example ETW listener using `krabsetw` wrapper (requires krabsetw or similar).
+- PowerShell/kernel_logger.ps1 : Example script for collecting process/image load events via WMI/EventLog.
+- LICENSE : MIT (for educational use).
 
-## İçerik
-- `src/MemoryScanner/` — C# ile yazılmış, süreç bellek bölümlerini güvenli şekilde tarayan örnek.
-- `src/ETWMonitor/` — Python ile ETW (Event Tracing for Windows) dinleyici örneği.
-- `src/PowershellLogger/` — PowerShell ile basit modül yükleme izleyici.
-- `docs/` — Mimari, kullanım kılavuzu, ve örnek çıktılar.
-- `Thesis/` — Tez özeti ve doküman (Türkçe).
-- `LICENSE` — MIT Lisansı.
-
-## Hızlı Başlangıç
-1. Projeyi izole bir VM'e kopyalayın (snapshot alın).
-2. `src/MemoryScanner` dizinindeki C# kodlarını Visual Studio ile açıp derleyin.
-3. Python ETW için `krabsetw` veya uygun ETW kütüphanesini izole VM'e kurun.
-4. PowerShell script'ini yalnızca test VM'de yönetici olarak çalıştırın.
-
-## Lisans
-MIT — eğitim ve araştırma amaçlı kullanım. Detaylar `LICENSE` dosyasında.
+## Usage
+- Review code and run only inside an isolated test VM you control.
+- Do not deploy any kernel-level components to production systems without vendor-grade testing.
