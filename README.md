@@ -98,7 +98,9 @@ Sistem aşağıdaki türde loglar üretir:
   "dll": "user32.dll",
   "base": "0x7FFBF12A0000"
 }
-Bellek Analizi
+
+````
+## Bellek Analizi
 
 
 {
@@ -114,6 +116,8 @@ ETW Eventleri
   "process": "explorer.exe",
   "path": "\\Device\\HarddiskVolume3\\Windows\\System32\\kernel32.dll"
 }
+
+'''
 ⚙️ Kurulum
 1. Repo’yu klonla
 
